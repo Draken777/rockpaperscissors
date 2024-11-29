@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #f4f4f4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffdd59;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Setup Section */
+#setup {
+    margin-bottom: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#setup label {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+#setup input {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 2px solid #ffdd59;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    width: 60px;
+    text-align: center;
+}
+
+#setup button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffdd59;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#setup button:hover {
+    background: #f6c23e;
+}
+
+/* Game Buttons */
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#rock {
+    background-color: #3498db;
+}
+
+#paper {
+    background-color: #2ecc71;
+}
+
+#scissors {
+    background-color: #e74c3c;
+}
+
+#play-round {
+    background-color: #8e44ad;
+}
+
+#play-round:disabled {
+    background-color: rgba(142, 68, 173, 0.6);
+    cursor: not-allowed;
+}
+
+/* Result Section */
+#result {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#result p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    #setup input {
+        width: 50px;
+    }
+}

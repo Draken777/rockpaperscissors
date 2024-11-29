@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>Rock, Paper, Scissors</h1>
+    <div id="setup">
+        <label for="rounds">Enter the total number of rounds:</label>
+        <input type="number" id="rounds" min="1" max="20" value="5">
+        <button id="start-game">Start Game</button>
+    </div>
+    <div id="game" style="display: none;">
+        <div class="buttons">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+        <button id="play-round" disabled>Play Round</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
